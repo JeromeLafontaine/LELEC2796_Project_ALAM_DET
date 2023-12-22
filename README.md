@@ -25,6 +25,7 @@ The main code to run is the **project.ipynb**. This notebook is based on **sionn
 4. scipy
 5. os
 6. tensorflow
+7. sionna
 
 If one of these packages are not installed on your laptop, you can do the following command:
 
