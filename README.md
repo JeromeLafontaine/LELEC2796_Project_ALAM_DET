@@ -11,7 +11,7 @@ This document will give informations about how to work with the files from this 
 
 ## Introduction
 The GitHub is organized as followed:
-- 4 folders: **Matrices**, **Moving_fast**, **Moving_very_fast** and **results**
+- 3 folders: **Matrices**, **Articles** and **results**
 - 2 Jupyter notebooks: **project** and **project_channel_calculation** 
 - 4 utils python codes: **utils_Alamouti**, **utils_eigen_TX2_RX1**, **utils_eigen** and **utils_TX2_RX1**
 
@@ -31,8 +31,16 @@ If one of these packages is not installed on your laptop, you can do the followi
 ```bash
 pip install <package>
 ```
+Be careful about the Sionna package. It will be safer to create an environment for it.
 
 ## Documents' description
+### Articles folder description
+In this folder, there is two documents:
+
+1. **Alamouti Paper**: *A Simple Transmit Diversity Technique for Wireless Communications*  by Siavash M. Alamouti in 1998.
+
+2. **Optional_Report_Jérôme_Côme**: *Comparative analysis of Alamouti and Dominant Eigenmode Transmission schemes using OFDM in MIMO and MISO systems* by Jérôme Lafontaine and Côme Wallner in 2023.
+
 ### project.ipynd description
 This notebook will be based on the 4 utils codes and the **matrices** folder, more precisely the **channel_matrix** python code. The **channel_matrix** Python code will provide the different matrices used for the channel in the notebook. 
 
@@ -51,5 +59,5 @@ Files which contain the useful functions the the MIMO dominant eigenmode transmi
 Files which contain the useful functions of the MISO Alamouti coding.
 
 ### project_channel_calculation description
-This is used to generate the channel matrix with ray tracing. The positions are hard coded and the code needs to be changed manually to change the positions of the UE (user equipment). 
-
+This is used to generate the channel matrix with ray tracing. The positions are hardcoded and the code needs to be changed manually to change the positions of the UE (user equipment). 
+Those values are the one given the results in the report. They can be changed if the scenario needs to be adapted.
