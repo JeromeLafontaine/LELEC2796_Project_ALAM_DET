@@ -54,8 +54,8 @@ You just have to run all cells to obtain the results from this notebook. In the 
 
 <p align="center">
 
-<img src="Scenario_annoted.png" alt="Scenario annoted"/>
-  <figcaption>Scenario and positions used in this project</figcaption>
+   <img src="Scenario_annoted.png" alt="Scenario annoted"/>
+  Scenario and positions used in this project
 
 </p>
 
