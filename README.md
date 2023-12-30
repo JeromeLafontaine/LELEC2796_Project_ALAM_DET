@@ -50,6 +50,11 @@ You just have to run all cells to obtain the results from this notebook. In the 
 ![Scenario](Scenario_annoted.png)
 *Scenario and positions used in this project*
 
+<figure>
+  <img src="Scenario_annoted.png" alt="Scenario annoted"/>
+  <figcaption>Scenario and positions used in this project</figcaption>
+</figure>
+
 #### 1. utils_Alamouty.py description
 Files which contain the useful functions of the MIMO Alamouti coding. This file is used in the project.ipynb file.
 
