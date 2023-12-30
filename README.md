@@ -47,7 +47,7 @@ This notebook will be based on the 4 utils codes and the **matrices** folder, mo
 
 You just have to run all cells to obtain the results from this notebook. In the first slides the parameters can be chosen (the positions of the receivers (starting point and end points) have to be chosen with values linked to the position as explained in the code). The possible positions are represented in the article linked to this project. If new positions (than the one presented in the figure below) want to be used, project_channel_calculation.py needs to be modified and used and new channel matrices need to be generated. 
 
-![Scenario](Scenraio_annoted.png)
+![Scenario](Scenario_annoted.png)
 
 #### 1. utils_Alamouty.py description
 Files which contain the useful functions of the MIMO Alamouti coding. This file is used in the project.ipynb file.
