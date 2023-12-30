@@ -47,7 +47,8 @@ This notebook will be based on the 4 utils codes and the **matrices** folder, mo
 
 You just have to run all cells to obtain the results from this notebook. In the first slides the parameters, i.e the positions of the receivers (starting and end points), have to be chosen with values linked to the position as explained in the code. The possible positions are represented in the article linked to this project. 
 
-If new positions (other than the ones presented in Fig. 1) need to be studied, **project_channel_calculation.py** has to be modified for the wanted case and new channel matrices need to be generated based on the new scenario. 
+> [!NOTE]\
+> If new positions (other than the ones presented in Fig. 1) need to be studied, **project_channel_calculation.py** has to be modified for the wanted case and new channel matrices need to be generated based on the new scenario. Once they are computed, these values are put directly inside the corresponding **channel_matrix** code (i.e. **channel_matrix.py**, **channel_matrix_SISO.py** or **channel_matrix_MISO.py**) wanted. Once this is done, the **project.ipynb** can be run again.
 
 
 <p align="center">
