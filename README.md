@@ -35,29 +35,33 @@ Be careful about the Sionna package. It will be safer to create an environment f
 
 ## Documents' description
 ### Articles folder description
-In this folder, there is two documents:
+In this folder, there are two documents:
 
 1. **Alamouti Paper**: *A Simple Transmit Diversity Technique for Wireless Communications*  by Siavash M. Alamouti in 1998.
 
 2. **Optional_Report_Jérôme_Côme**: *Comparative analysis of Alamouti and Dominant Eigenmode Transmission schemes using OFDM in MIMO and MISO systems* by Jérôme Lafontaine and Côme Wallner in 2023.
+   Inside this report are the results from the different simulations obtained thanks to this project and the analysis.
 
 ### project.ipynd description
-This notebook will be based on the 4 utils codes and the **matrices** folder, more precisely the **channel_matrix** python code. The **channel_matrix** Python code will provide the different matrices used for the channel in the notebook. 
+This notebook will be based on the 4 utils codes and the **matrices** folder, more precisely the different **channel_matrix** python codes. The **channel_matrix** Python code will provide the different matrices used for the channel in the notebook. 
 
-You just have to run all cells to obtain the results from this notebook. In the first slides the parameters can be chosen (the positions of the receivers (starting point and end points) have to be chosen with values linked to the position as explained in the code). The possible positions are represented in the article linked to this project.
+You just have to run all cells to obtain the results from this notebook. In the first slides the parameters can be chosen (the positions of the receivers (starting point and end points) have to be chosen with values linked to the position as explained in the code). The possible positions are represented in the article linked to this project. If new positions (than the one presented in the figure below) want to be used, project_channel_calculation.py needs to be modified and used and new channel matrices need to be generated. 
+
+![Scenario](Scenraio_annoted.png)
+
 #### 1. utils_Alamouty.py description
-Files which contain the useful functions of the MIMO Alamouti coding.
+Files which contain the useful functions of the MIMO Alamouti coding. This file is used in the project.ipynb file.
 
 #### 2. utils_eigen_TX2_RX1.py description
-Files which contain the useful functions the the MISO dominant eigenmode transmission.
+Files which contain the useful functions of the MISO dominant eigenmode transmission. This file is used in the project.ipynb file.
 
 
 #### 3. utils_eigen.py description
-Files which contain the useful functions the the MIMO dominant eigenmode transmission.
+Files which contain the useful functions of the MIMO dominant eigenmode transmission. This file is used in the project.ipynb file.
 
 #### 4. utils_TX2_RX1.py description
-Files which contain the useful functions of the MISO Alamouti coding.
+Files which contain the useful functions of the MISO Alamouti coding. This file is used in the project.ipynb file.
 
-### project_channel_calculation description
-This is used to generate the channel matrix with ray tracing. The positions are hardcoded and the code needs to be changed manually to change the positions of the UE (user equipment). 
+### project_channel_calculation.py description
+This is used to generate the channel matrix with ray tracing. The positions are hardcoded and the code needs to be changed manually to change the UE's (user equipment) positions. 
 Those values are the one given the results in the report. They can be changed if the scenario needs to be adapted.
