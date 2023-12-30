@@ -18,7 +18,7 @@ The GitHub is organized as followed:
 
 The main code to run is the **project.ipynb**. 
 > [!NOTE]\
-> This notebook is based on **sionna** package from Python and the notebook will install it directly. The other python's packages used in this project are:
+> This notebook is based on **Sionna** package from Python and the notebook will install it directly. The other python's packages used in this project are:
 >  1. pandas
 >  2. matplotlib
 >  3. numpy
