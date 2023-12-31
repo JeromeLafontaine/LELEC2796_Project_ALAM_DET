@@ -144,11 +144,11 @@ def eigen_BER_different_SNR_TX2_RX1(x_eigen_OFDM , SNR , batch_size, rg,
   Args:
         x_eigen_OFDM (np.ndarray): Input symbols
         SNR (int): SNR value
-        batch_size (int):
-        rg ():
+        batch_size (int): Number of batches taken into account in the differents symbols (1)
+        rg (sn.ofdm.ResourceGrid): Resource grid -> will be used to know where the data bits
         h_start_21 (np.ndarray): H matrix from the first chosen position
         h_end_21 (np.ndarray): H matrix from the second chosen position
-        b (): ...
+        b (np.ndarray): binary bits encoded before transmission 
         OFDM_pilots_time (array): Position of the OFDM pilots in time domain, default: []
         num_bits_per_symbols (int): Number of bits per symbols, default: 2
         num_ofdm_symbols (int): Number of OFDM symbols, default: 2        

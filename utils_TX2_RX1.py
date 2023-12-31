@@ -103,11 +103,11 @@ def Alamouti_1_BER_different_SNR_TX2_RX1(x_Alamouti_OFDM , SNR , batch_size,
   Args:
         x_Alamouti_OFDM (np.ndarray): Input symbols
         SNR (int): SNR value
-        batch_size (int):
-        rg ():
+        batch_size (int): Number of batches taken into account in the differents symbols (1)
+        rg (sn.ofdm.ResourceGrid): Resource grid -> will be used to know where the data bits
         h_start_21 (np.ndarray): H matrix from the first chosen position
         h_end_21 (np.ndarray): H matrix from the second chosen position
-        b (): 
+        b (np.ndarray): binary bits encoded before transmission
         num_bits_per_symbols (int): Number of bits per symbols, default: 2
         num_ofdm_symbols (int): Number of OFDM symbols, default: 2
         OFDM_pilots_time (array): Position of the OFDM pilots in time domain, default: []
@@ -221,14 +221,14 @@ def Alamouti_2_BER_different_SNR_TX2_RX1(x_Alamouti_OFDM , SNR , batch_size, h_s
     Args:
         x_Alamouti_OFDM (np.ndarray): Input symbols
         SNR (int): SNR value
-        batch_size (int):
+        batch_size (int): Number of batches taken into account in the differents symbols (1)
         h_start (np.ndarray): H matrix from the first chosen position
         h_end (np.ndarray): H matrix from the second chosen position
         num_ofdm_symbols (int): Number of OFDM symbols, default: 2
         num_bits_per_symbols (int): Number of bits per symbols, default: 2
         OFDM_pilots_time (array): Position of the OFDM pilots in time domain, default: []
-        rg (): ...., default: None
-        b (): ..., default: None 
+        rg (sn.ofdm.ResourceGrid): Resource grid -> will be used to know where the data bits, default: None
+        b (np.ndarray): binary bits encoded before transmission, default: None 
     Returns:
         np.mean(ber) (int): Mean of the BER values computed 
     """
