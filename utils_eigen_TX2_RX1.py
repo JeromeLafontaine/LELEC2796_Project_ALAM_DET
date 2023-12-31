@@ -140,6 +140,22 @@ def eigen_Sionna_ENCODER_TX2_RX1(y_eigen : np.ndarray , h_eigen : np.ndarray, rg
 def eigen_BER_different_SNR_TX2_RX1(x_eigen_OFDM , SNR , batch_size, rg,
                                     h_start_21,h_end_21, b, OFDM_pilots_time=[],
                                     num_bits_per_symbol=2, num_ofdm_symbols=2):
+  """ Dominant eigenmode transmission BER for different SNR with 2 TX and 1 RX
+  Args:
+        x_eigen_OFDM (np.ndarray): Input symbols
+        SNR (int): SNR value
+        batch_size (int):
+        rg ():
+        h_start_21 (np.ndarray): H matrix from the first chosen position
+        h_end_21 (np.ndarray): H matrix from the second chosen position
+        b (): ...
+        OFDM_pilots_time (array): Position of the OFDM pilots in time domain, default: []
+        num_bits_per_symbols (int): Number of bits per symbols, default: 2
+        num_ofdm_symbols (int): Number of OFDM symbols, default: 2        
+  Returns:
+       np.mean(BER) (int): Mean of the BER values computed 
+  """  
+  
   # Noise level
   no = ebnodb2no(ebno_db = SNR, num_bits_per_symbol = num_bits_per_symbol, coderate=1, resource_grid = rg)
   rayleigh = sn.channel.RayleighBlockFading(num_rx = 1,

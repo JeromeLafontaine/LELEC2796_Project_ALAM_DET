@@ -159,6 +159,23 @@ def eigen_Sionna_ENCODER(y_eigen : np.ndarray , h_eigen : np.ndarray,
     return z , u_max , H
 
 def eigen_BER_different_SNR(x_eigen_OFDM , SNR , batch_size, rg, OFDM_pilots_time, num_bits_per_symbol=2, num_ofdm_symbols=2, h_start = None, h_end = None, b = None):
+  """ Dominant eigenmode transmission BER for different SNR
+  Args:
+        x_eigen_OFDM (np.ndarray): Input symbols
+        SNR (int): SNR value
+        batch_size (int):
+        rg ():
+        OFDM_pilots_time (array): Position of the OFDM pilots in time domain
+        num_bits_per_symbols (int): Number of bits per symbols, default: 2
+        num_ofdm_symbols (int): Number of OFDM symbols, default: 2  
+        h_start (np.ndarray): H matrix from the first chosen position, default: None
+        h_end (np.ndarray): H matrix from the second chosen position, default = None
+        b (): ..., default = None
+              
+  Returns:
+       np.mean(BER) (int): Mean of the BER values computed 
+  """  
+
   # Noise level
   no = ebnodb2no(ebno_db = SNR, num_bits_per_symbol = num_bits_per_symbol, coderate=1, resource_grid = rg)
   rayleigh = sn.channel.RayleighBlockFading(num_rx = 2,
